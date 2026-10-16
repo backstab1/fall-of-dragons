@@ -491,15 +491,15 @@ h1, h2 { margin: 0; font-weight: 400; }
 
   <section class="hero" aria-label="Обложка">
     <div class="triptych">
-      <div class="frame side"><img src="images/7.jpg" width="940" height="1672" alt="Девушка в чёрном бархатном платье у каменной колонны, рядом горят факелы" style="object-position:50% 30%"></div>
+      <div class="frame side"><img src="images/7.jpg?v=2" width="940" height="1672" alt="Девушка в чёрном бархатном платье у каменной колонны, рядом горят факелы" style="object-position:50% 30%"></div>
       <div class="hero-large">
         <figure class="frame" data-crossfade>
-          <img class="is-on" src="images/5.jpg" width="940" height="1672" alt="Эймонд с повязкой на глазу склоняется к темноволосой девушке в полумраке свечей" style="object-position:50% 34%">
-          <img src="images/6.jpg" width="941" height="1672" alt="Её пальцы касаются шрама на его лице" style="object-position:50% 30%" loading="lazy">
-          <img src="images/1.jpg" width="720" height="1280" alt="Двое со спины на балконе над ночным городом с флагами Таргариенов" style="object-position:50% 46%" loading="lazy">
+          <img class="is-on" src="images/5.jpg?v=2" width="940" height="1672" alt="Эймонд с повязкой на глазу склоняется к темноволосой девушке в полумраке свечей" style="object-position:50% 34%">
+          <img src="images/6.jpg?v=2" width="941" height="1672" alt="Её пальцы касаются шрама на его лице" style="object-position:50% 30%" loading="lazy">
+          <img src="images/1.jpg?v=2" width="941" height="1672" alt="Двое со спины на балконе над ночным городом с флагами Таргариенов" style="object-position:50% 46%" loading="lazy">
         </figure>
       </div>
-      <div class="frame side"><img src="images/8.jpg" width="941" height="1672" alt="Эймонд с повязкой на глазу у парапета, рядом горят факелы" style="object-position:50% 30%"></div>
+      <div class="frame side"><img src="images/8.jpg?v=2" width="941" height="1672" alt="Эймонд с повязкой на глазу у парапета, рядом горят факелы" style="object-position:50% 30%"></div>
     </div>
     <h1 class="hero-title"><span class="by"><i style="--d:150ms">by drzzlla_</i></span><span><i style="--d:300ms">Fall of Dragons</i></span></h1>
     <p class="hero-note" data-reveal="text" style="--d:800ms">Фанфик по «Дому Дракона». Эймонд Таргариен и та, ради кого он будет жечь весь мир.</p>
@@ -537,7 +537,7 @@ h1, h2 { margin: 0; font-weight: 400; }
 </main>
 
 <footer class="footer">
-  <img src="images/1.jpg" width="720" height="1280" alt="" loading="lazy">
+  <img src="images/1.jpg?v=2" width="941" height="1672" alt="" loading="lazy">
   <div class="footer-top">
     <ul>
       <li><a class="link" href="https://ficbook.net/readfic/019ff65a-2af9-7be9-b9cb-646e549e66be" target="_blank" rel="noopener">Фикбук</a></li>
@@ -625,7 +625,7 @@ h1, h2 { margin: 0; font-weight: 400; }
     cur = (i + scenes.length) % scenes.length;
     const s = scenes[cur];
     const apply = () => {
-      lbImg.src = 'images/' + s.src;
+      lbImg.src = 'images/' + s.src + '?v=2';
       lbImg.alt = s.alt;
       lbCount.textContent = (cur + 1) + ' из ' + scenes.length;
       requestAnimationFrame(() => lbImg.classList.remove('swap'));
